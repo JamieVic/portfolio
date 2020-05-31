@@ -28,10 +28,10 @@ header img {
 section {
     margin: 0 auto;
     width: 100%;
-    height: 150vh;
+    height: 138vh;
     display: grid;
-    grid-template-columns: 18% 18% 18%;
-    grid-template-rows: 36vh;
+    grid-template-columns: 18vw 18vw 18vw;
+    grid-template-rows: 33vh;
     grid-gap: 2vh;
     justify-content: center;
 }
@@ -52,11 +52,11 @@ section a:hover {
 }
 
 section a i {
-    font-size: 6em;
+    font-size: 4vw;
 }
 
 section a p {
-    font-size: 1.5em;
+    font-size: 1vw;
 }
 
 footer {
@@ -108,7 +108,7 @@ footer input[type=submit]:hover {
 
     section {
         height: 116.5vh;
-        grid-template-columns: 45vw 45vw;
+        grid-template-columns: 43vw 43vw;
         grid-template-rows: 22.5vh;
         grid-gap: 1vh;
     }
@@ -132,4 +132,35 @@ footer input[type=submit]:hover {
     footer input[type=submit] {
         padding: initial;
     }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  section {
+      height: 145vh;
+      grid-template-columns: 30vw 30vw;
+      grid-template-rows: 28vh;
+      grid-gap: 1vh;
+  }
+  
+   footer input[type=submit] {
+        padding: initial;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 80%;
+  }
+  
+  section {
+    grid-template-columns: 25vw 25vw 25vw;
+  }
+  
+  section a p {
+     font-size: 1.5vw;
+  }
+  
+  footer {
+    width: 80%;
+  }
 }
