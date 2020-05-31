@@ -1,0 +1,135 @@
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    width: 70%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+header div {
+    padding: 0 2%;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+#header-text i {
+    margin-right: 3%;
+}
+
+section {
+    margin: 0 auto;
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 18% 18% 18%;
+    grid-template-rows: 36vh;
+    grid-gap: 2vh;
+    justify-content: center;
+}
+
+section a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+section a:hover {
+    opacity: 0.7;
+}
+
+section a i {
+    font-size: 6em;
+}
+
+section a p {
+    font-size: 1.5em;
+}
+
+footer {
+    width: 70%;
+    margin: 2% auto;
+    border-top: 1px solid rgb(180, 180, 180);
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer input[type=text], [type=email], [type=number] {
+    display: block;
+    margin-top: 1%;
+    font-size: 1em;
+    width: 100%;
+    padding: 0.5%;
+}
+
+footer input[type=submit] {
+    margin-top: 1%;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    padding: 0.5%;
+    border: 0;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+footer input[type=submit]:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        width: 90%;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    #header-text h1 {
+        font-size: 1.25em;
+    }
+
+    section {
+        height: 116.5vh;
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: 22.5vh;
+        grid-gap: 1vh;
+    }
+
+    section a i {
+        font-size: 2em;
+    }
+    
+    section a p {
+        font-size: 1em;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer input[type=submit] {
+        padding: initial;
+    }
+}
