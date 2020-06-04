@@ -1,0 +1,271 @@
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    background-color: rgb(255, 102, 0);
+    position: fixed;
+    width: 100%;
+    font-size: 1.25em;
+    top: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    transition: 0.5s;
+}
+
+#navbar a:hover {
+    background-color: white;
+    color: rgb(255, 102, 0);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+#welcome-section h1 {
+    font-size: 6em;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#welcome-section h2 {
+    font-size: 2.5em;
+    font-family: 'Muli', sans-serif;
+}
+
+#about {
+    background-color: black;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#about p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#projects {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#projects h2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#projects-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-tile {
+    max-width: 250px;
+    background-color: black;
+    color: white;
+    padding-bottom: 1%;
+}
+
+.project-tile h3 {
+    width: 80%;
+    margin: 5% auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-tile p {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.project-tile a {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.project-tile a:hover {
+    background-color: white;
+    color: rgb(255, 102, 0);
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#contact h2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#contact form {
+    text-align: center;
+}
+
+#contact form input[type=text] {
+    margin-right: 0.5%;
+}
+
+#contact form input[type=email] {
+    margin-left: 0.5%;
+}
+
+#contact form input[type=text], input[type=email] {
+    padding: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+#contact form textarea {
+    display: block;
+    margin: 0.5% auto;
+    font-family: "Arial", sans-serif;
+    padding: 0.5%;
+}
+
+#contact input[type=submit] {
+    border: 0;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    padding: 0.35%;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+
+#contact input[type=submit]:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 102, 0);
+}
+
+#contact footer {
+    text-align: center;
+    margin-top: 1%;
+}
+
+#contact footer a {
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    font-size: 2em;
+    margin: 0.5%;
+    transition: 0.5s;
+}
+
+#contact footer a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 425px) {
+    #navbar {
+        font-size: 1em;
+    }
+
+    #navbar a {
+        margin-right: 2%;
+    }
+
+    #welcome-section h1 {
+        font-size: 4em;
+    }
+
+    #welcome-section h2 {
+        font-size: 1.5em;
+    }
+
+    #about img {
+        max-width: 50%;
+    }
+
+    #about p {
+        width: 80%;
+        text-align: center;
+    }
+
+    #projects-cards {
+        display: block;
+    }
+
+    .project-tile {
+        margin: 5% auto;
+    }
+
+    #contact form input[type=text], input[type=email] {
+        padding: 2%;
+    }
+
+    #contact form textarea {
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    #contact input[type=submit] {
+        padding: 1%;
+    }
+
+    #contact footer a {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #navbar {
+        font-size: 1em;
+    }
+
+    #welcome-section h1 {
+        font-size: 4em;
+    }
+
+    #welcome-section h2 {
+        font-size: 1.5em;
+    }
+
+    #about p {
+        width: 80%;
+    }
+
+    #contact form input[type=text], input[type=email] {
+        padding: 1%;
+    }
+
+    #contact form textarea {
+        padding: 1%;
+    }
+
+    #contact input[type=submit] {
+        padding: 1%;
+    }
+}
