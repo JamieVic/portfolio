@@ -1,0 +1,131 @@
+body {
+    margin: 0 auto;
+    display: grid;
+    font-family: "Verdana", sans-serif;
+}
+
+#navbar {
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    height: 100%;
+    width: 22%;
+}
+
+#navbar header {
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 2em;
+    border-bottom: 1px solid gray;
+}
+
+#navbar header img {
+    width: 10%;
+}
+
+#navbar .nav-link {
+    text-decoration: none;
+    color: black;
+    text-indent: 12%;
+    display: block;
+    font-size: 1.25em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid gray;
+}
+
+#main-doc {
+    margin-left: 24%;
+    margin-right: 2%;
+}
+
+#main-doc h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.main-section header {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.main-section .code-container {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.code-container code {
+    margin-left: 2%;
+    display: block;
+    font-size: 1.25em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 425px) {
+    #navbar {
+        position: initial;
+        width: 100%;
+        height: initial;
+    }
+
+    #main-doc {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #main-doc h1 {
+        font-size: 2.1em;
+    }
+
+    #main-doc #intro {
+        font-size: 1.5em;
+    }
+
+    .main-section header {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #navbar {
+        width: initial;
+    }
+
+    #navbar header {
+        font-size: 1.5em;
+    }
+
+    #navbar .nav-link {
+        font-size: 1em;
+    }
+
+    #main-doc {
+        margin-left: 35%;
+    }
+
+    #main-doc h1 {
+        font-size: 2.5em;
+    }
+
+    #main-doc #intro {
+        font-size: 1.5em;
+    }
+
+    .main-section header {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #navbar {
+        width: initial;
+    }
+
+    #main-doc {
+        margin-left: 35%;
+    }
+}

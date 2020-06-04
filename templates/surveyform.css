@@ -1,0 +1,95 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(43, 33, 179);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 3em;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+}
+
+#survey-form {
+    background-color: rgba(8, 5, 51, 0.8);
+    width: 50%;
+    margin: 0 auto;
+    padding: 4%;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-size: 1.25em;
+    padding-bottom: 2%;
+}
+
+input {
+    margin-bottom: 2%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+input[type=text], [type=email], [type=number] {
+    width: 96%;
+}
+
+select {
+    margin-bottom: 2%;
+    width: 96%;
+    padding: 1%;
+}
+
+#gender-wrapper label {
+    display: inline-block;
+    font-size: 1em;
+}
+
+#improvement-wrapper label {
+    display: inline-block;
+    font-size: 1em;
+}
+
+#comments {
+    width: 96%;
+}
+
+input[type=submit] {
+    margin-top: 2%;
+    border-radius: 0;
+    width: 97%;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 425px) {
+    #survey-form {
+        width: 70%;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    #gender-wrapper label {
+        font-size: 0.8em;
+    }
+
+    #improvement-wrapper label {
+        font-size: 0.8em;
+    }
+
+    input[type=submit] {
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    input[type=submit] {
+        width: 98%;
+    }
+}

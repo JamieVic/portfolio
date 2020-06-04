@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<meta name="description" content="Documentation Page" />
+	<title>Documentation Page</title>
+    <link rel="stylesheet" href="docpage.css" />
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <a class="nav-link" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#headings">Headings</a>
+        <a class="nav-link" href="#paragraphs">Paragraphs</a>
+        <a class="nav-link" href="#links">Links</a>
+        <a class="nav-link" href="#images">Images</a>
+        <a class="nav-link" href="#lists">Lists</a>
+    </nav>
+    <main id="main-doc">
+        <h1>HTML Documentation</h1>
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+            <br>
+            <br>
+            "HyperText" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+            <br>
+            <br>
+            HTML uses "markup" to annotate text, images, and other content for display in a Web browser. Tags in HTML are case insensitive. That is, they can be written in uppercase, lowercase, or a mixture.
+            <br>
+            <br>
+            Additionally, HTML can be used alongside other programming languages to provide styling & functionality including:</p>
+            <ul>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>SASS</li>
+                <li>LESS</li>
+            </ul>
+        </section>
+        <section id="headings" class="main-section">
+            <header>Headings</header>
+            <p>Headings are used to visually title an article or section of a document.</p>
+            <p>There are six levels of headings which differ in size and importance.</p>
+            <div class="code-container">
+                <code>&lt;h1&gt;First important&lt;/h1&gt;</code>
+                <code>&lt;h2&gt;Second important&lt;/h2&gt;</code>
+                <code>&lt;h3&gt;Third important&lt;/h3&gt;</code>
+                <code>&lt;h4&gt;Fourth important&lt;/h4&gt;</code>
+                <code>&lt;h5&gt;Fifth important&lt;/h5&gt;</code>
+                <code>&lt;h6&gt;Sixth important&lt;/h6&gt;</code>
+            </div>
+        </section>
+        <section id="paragraphs" class="main-section">
+            <header>Paragraphs</header>
+            <p>Paragraphs contain the majority of text-based content on web pages.</p>
+            <p>Just like headings, paragraph tags will include white space margins so paragraphs aren't crammed together.</p>
+            <div class="code-container">
+                <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+            </div>
+        </section>
+        <section id="links" class="main-section">
+            <header>Links</header>
+            <p>HTML Links allow users to visit another page from one web page.</p>
+            <p>By default, links are distinguished by their blue text colour and underlined text decoration.</p>
+            <div class="code-container">
+                <code>&lt;a&gt;This is a link&lt;/a&gt;</code>
+            </div>
+        </section>
+        <section id="images" class="main-section">
+            <header>Images</header>
+            <p>Images can be included in web pages very easily.</p>
+            <p>The image tag closes itself, meaning you don't have to include an ending tag.</p>
+            <div class="code-container">
+                <code>&lt;img src="link.png"&gt;</code>
+            </div>
+        </section>
+        <section id="lists" class="main-section">
+            <header>Lists</header>
+            <p>Lists are used to present text in a more organised fashion.</p>
+            <p>There are two types of lists that can be used; ordered and unordered.</p>
+            <div class="code-container">
+                <code>&lt;ul&gt;&lt;li&gt;This is an unordered list item&lt;/li&gt;&lt;/ul&gt;</code>
+                <code>&lt;ol&gt;&lt;li&gt;This is an ordered list item&lt;/li&gt;&lt;/ol&gt;</code>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

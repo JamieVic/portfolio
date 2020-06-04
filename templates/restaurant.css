@@ -1,0 +1,181 @@
+body {
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgb(150, 150, 150);
+    top: 0;
+    background-color: white;
+}
+
+header h1 {
+    font-weight: 400;
+    margin-left: 2%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    margin-top: 4%;
+}
+
+#article-title {
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url('food.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+#article-title h2 {
+    color: rgb(70, 70, 70);
+    margin-left: 2%;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin: 5% auto;
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+section img {
+    margin: 0 auto;
+}
+
+section .mobile-img {
+    display: none;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+section div {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.menu-item {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#booking {
+    display: initial;
+    border: 0;
+}
+
+#booking-content {
+    margin: 0 auto;
+}
+
+#booking-content h2 {
+    text-align: initial;
+    font-size: 2em;
+}
+
+#booking-content input {
+    font-family: 'EB Garamond', serif;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    font-size: 1em;
+}
+
+#booking-content input[type=text] {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+#booking-content input[type=submit] {
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+#booking-content input[type=submit]:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+    nav {
+        visibility: hidden;
+    }
+
+    #article-title {
+        width: 100%;
+    }
+
+    section {
+        display: inline-block;
+    }
+
+    section img {
+        width: 50%;
+        display: block;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    section .main-img {
+        display: none;
+    }
+
+    section .mobile-img {
+        display: block;
+    }
+
+    section div {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    header nav {
+        width: 25%;
+    }
+
+    #article-title {
+        width: 100%;
+    }
+
+    section img {
+        width: 50%;
+    }
+
+    #booking-content h2 {
+        text-align: center;
+    }
+}

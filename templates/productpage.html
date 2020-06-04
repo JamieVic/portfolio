@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<meta name="description" content="Product Landing Page" />
+	<title>Product Landing Page</title>
+    <link rel="stylesheet" href="productpage.css" />
+    <link href="https://fonts.googleapis.com/css?family=Exo:600i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <a href="#models" class="nav-link">Models</a>
+            <a href="#specs" class="nav-link">Specs</a>
+            <img src="logo.png" id="header-img">
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    <article>
+        <div id="banner">
+            <div id="banner-text">
+                <h1>Karin Futo</h1>
+                <h2>Karate chop the corners</h2>
+            </div>
+        </div>
+        <div id="models">
+            <h1>Choose Your Fighter</h1>
+            <div id="model-card-container">
+                <div class="model-card">
+                    <img src="basic.png">
+                    <h2>Futo</h2>
+                    <p>The standard edition includes Karin-trademarked performance & handling, perfect for those who are satsified with what the Futo has to offer without getting too technical.</p>
+                </div>
+                <div class="model-card">
+                    <img src="classic.png">
+                    <h2>Futo GT</h2>
+                    <p>The GT edition comes equipped with an updated chassis, EMS & transmission upgrades, race exhaust kit, tinted windows and xenon headlights to make you feel a part of the Karin Rally Team.</p>
+                </div>
+            </div>
+        </div>
+        <div id="specs">
+            <table>
+                <th colspan="2">Specs</th>
+                <tr>
+                    <td class="table-subtitle">Top Speed</td>
+                    <td>84 (mph) / 135 (kmh)</td>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Acceleration (0-100kmh in secs)</td>
+                    <td>6.8 seconds</td>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Engine</td>
+                    <td>N/A (Naturally Aspirated) Inline 20 valves (Inline-5)</td>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Drivetrain</td>
+                    <td>Rear wheel drive</td>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Mass</td>
+                    <td>900 (kg) / 1984 (lbs)</td>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Fuel Tank Capacity</td>
+                    <td>65 litres</td>
+                </tr>
+            </table>
+        </div>
+        <div id="gallery">
+            <h1>Gallery</h1>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Tak6CV_tXAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="image-container">
+                <img src="basic.png">
+                <img src="futo-2.png">
+                <img src="futo-3.png">
+                <img src="futo-4.png">
+            </div>
+        </div>
+        <div id="contact">
+            <h1>Interested?</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="john@example.com" required><input type="submit" id="submit" name="submit" value="Subscribe">
+            </form>
+        </div>
+    </article>
+</body>
+</html>
