@@ -1,0 +1,134 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+article {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 70% 25%;
+    grid-column-gap: 5%;
+    margin: 0 auto;
+}
+
+.blog-post {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+}
+
+.blog-img {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(175, 175, 175);
+    padding: 1%;
+    display: inline-block;
+}
+
+.blog-post a:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.post-text {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.nav-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+}
+
+.nav-title {
+    text-indent: 10px;
+    background-color: rgb(220, 220, 220);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.nav-item img {
+    width: 100%;
+}
+
+.nav-text {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
+
+.nav-text span {
+    background-color: rgb(230, 230, 230);
+    padding: 1%;
+    margin: 1%;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.nav-text span:hover {
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.nav-links a:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.nav-links img {
+    width: 8%;
+    padding-right: 2%;
+}
+
+@media only screen and (max-width: 425px) {
+    article {
+        display: block;
+    }
+
+    .blog-post {
+        padding-bottom: 4%;
+    }
+
+    .blog-img {
+        height: 25vh;
+    }
+
+    .post-text {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    article {
+        display: block;
+    }
+}

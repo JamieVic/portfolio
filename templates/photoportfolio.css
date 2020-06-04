@@ -1,0 +1,256 @@
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    background-color: rgba(200, 200, 200, 0.4);
+    padding: 0.5%;
+    margin: 0.5%;
+    display: inline-block;
+    transition: 0.6s;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+#section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('camera.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#section-title h1 {
+    background-color: rgba(200, 200, 200, 0.4);
+    color: rgb(25, 25, 25);
+    padding: 1%;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+#about {
+    background-color: rgb(25, 25, 25);
+    color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#about img {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+}
+
+#about-text {
+    background-color: rgb(100, 100, 100);
+    color: rgb(25, 25, 25);
+    width: 25%;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+#about-text h2 {
+    text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('waterfall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#img-library {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(200, 200, 200, 0.4);
+    width: 75%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#img-library img {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#img-library img:hover {
+    opacity: 0.8;
+}
+
+#contact {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#contact h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+input[type=text], [type=email], [type=number] {
+    display: block;
+    margin-top: 1%;
+    font-size: 1em;
+    width: 100%;
+    padding: 0.5%;
+}
+
+input[type=submit] {
+    margin-top: 1%;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    padding: 0.5%;
+    border: 0;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        display: none;
+    }
+
+    #section-title {
+        background-attachment: initial;
+    }
+
+    #section-title h1 {
+        font-size: 1.5em;
+    }
+
+    #about {
+        display: inline-block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #about img {
+        display: block;
+        width: 60%;
+    }
+
+    #about-text {
+        width: 75%;
+        margin-top: 5%;
+        padding: 5%;
+    }
+
+    #gallery {
+        display: inline-block;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-attachment: initial;
+    }
+
+    #img-library {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    #img-library img {
+        width: 80%;
+    }
+
+    input[type=submit] {
+        padding: 1%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    nav a {
+        padding: 1%;
+    }
+
+    #about {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #about img {
+        width: 40%;
+    }
+
+    #about-text {
+        width: 40%;
+    }
+
+    #gallery {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #img-library {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #img-library img {
+        width: 45%;
+    }
+
+    input[type=submit] {
+        padding: 1%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #about img {
+        width: 30%;
+    }
+
+    #about-text {
+        width: 40%;
+    }
+
+    #gallery {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
