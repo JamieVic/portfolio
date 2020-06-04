@@ -1,0 +1,60 @@
+body {
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    margin-left: 5%;
+    font-weight: 500;
+    font-size: 3.1em;
+}
+
+hr {
+    width: 95%;
+}
+
+section {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 1%;
+}
+
+em {
+    font-size: 1.6em;
+}
+
+figure {
+    display: block;
+    border: 1px solid silver;
+    padding: 0.5%;
+    margin: 0 auto;
+    text-align: center;
+    width: 33%;
+    background-color: #F5F5F5;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    em {
+        font-size: 1.2em;
+    }
+
+    figure {
+        width: 66%;
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    figure {
+        width: 66%;
+    }
+}
