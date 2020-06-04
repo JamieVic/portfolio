@@ -1,0 +1,102 @@
+body {
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+
+#title {
+    font-size: 4.5em;
+    font-weight: 200;
+    border-bottom: 1px solid rgb(139, 139, 139);
+    padding-bottom: 2%;
+    margin: 1% auto;
+    width: 40%;
+}
+
+#img-div {
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#image {
+    max-width: 25%; 
+    display: block;
+    margin: 0 auto;
+  }
+
+h2 {
+    text-align: center;
+    padding-top: 1%;
+    font-size: 2.5em;
+}
+
+#content-wrapper {
+    background-color: rgb(219, 219, 219);
+}
+
+#tribute-info {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 2;
+}
+
+#tribute-footer {
+    border-top: 1px solid rgb(139, 139, 139);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 425px) {
+    #title {
+        font-size: 2em;
+        width: 70%;
+    }
+
+    #image {
+        max-width: 50%;
+    }
+
+    #img-caption {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    #tribute-info {
+        font-size: 0.9em;
+    }
+
+    #tribute-footer {
+        font-size: 0.9em;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #title {
+        width: 70%;
+    }
+    
+    #image {
+        max-width: 40%;
+    }
+
+    #tribute-footer {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #title {
+        font-size: 3.5em;
+    }
+
+    #tribute-footer {
+        width: 60%;
+    }
+}
