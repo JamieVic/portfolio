@@ -254,3 +254,9 @@ input[type=submit]:hover {
         padding-bottom: 5%;
     }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    #img-library img {
+        width: 22%;
+    }
+}
