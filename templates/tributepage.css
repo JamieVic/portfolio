@@ -68,7 +68,7 @@ h2 {
     }
 
     #content-wrapper {
-        position: fixed;
+        position: absolute;
         bottom: 0;
     }
 
