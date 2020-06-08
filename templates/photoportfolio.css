@@ -245,6 +245,10 @@ input[type=submit]:hover {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #section-title {
+        background-attachment: initial;
+    }
+
     #about img {
         width: 30%;
     }
@@ -257,6 +261,7 @@ input[type=submit]:hover {
         height: auto;
         padding-top: 5%;
         padding-bottom: 5%;
+        background-attachment: initial;
     }
 }
 
