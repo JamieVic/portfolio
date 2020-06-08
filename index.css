@@ -141,6 +141,14 @@ footer input[type=submit]:hover {
       grid-template-rows: 28vh;
       grid-gap: 1vh;
   }
+
+  section a i {
+    font-size: 5vw;
+}
+
+section a p {
+    font-size: 2vw;
+}
   
    footer input[type=submit] {
         padding: initial;
