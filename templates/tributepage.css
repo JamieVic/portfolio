@@ -68,8 +68,7 @@ h2 {
     }
 
     #content-wrapper {
-        position: absolute;
-        bottom: 0;
+        height: 50vh;
     }
 
     #tribute-info {
