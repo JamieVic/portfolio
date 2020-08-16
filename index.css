@@ -1,174 +1,124 @@
-body {
-    margin: 0 auto;
-    font-family: 'Lato', sans-serif;
+nav, p, h2, h3, input[type=text], input[type=email], input[type=submit] {
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2% auto;
-    width: 70%;
-    padding-bottom: 2%;
-    border-bottom: 1px solid rgb(180, 180, 180);
+.nav-link:hover {
+    color: rgb(200, 200, 200) !important;
 }
 
-header div {
-    padding: 0 2%;
+#intro, #contact {
+    background-color: rgb(220, 220, 220);
 }
 
-header img {
+#intro img {
     border-radius: 50%;
+    border: 2px solid rgb(60, 60, 60);
 }
 
-#header-text i {
-    margin-right: 3%;
+#intro h1, #contact h2 {
+    border-bottom: 2px solid rgb(33, 37, 41);
 }
 
-section {
-    margin: 0 auto;
-    width: 100%;
-    height: 103vh;
-    display: grid;
-    grid-template-columns: 18vw 18vw 18vw;
-    grid-template-rows: 33vh;
-    grid-gap: 2vh;
-    justify-content: center;
+#intro h2 {
+    font-size: 1.75em;
 }
 
-section a {
+h2 {
+    font-size: 3em;
+}
+
+#about h2, #skills h2 {
+    border-bottom: 2px solid rgb(33, 37, 41);
+}
+
+#projects h2 {
+    border-bottom: 2px solid white;
+}
+
+.col i {
+    font-size: 3em;
+}
+
+.card-body a:hover {
     text-decoration: none;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.6s;
 }
 
-section a:hover {
-    opacity: 0.7;
-}
-
-section a i {
-    font-size: 4vw;
-}
-
-section a p {
-    font-size: 1vw;
-}
-
-footer {
-    width: 70%;
-    margin: 2% auto;
-    border-top: 1px solid rgb(180, 180, 180);
-}
-
-footer p {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-footer input[type=text], [type=email], [type=number] {
-    display: block;
-    margin-top: 1%;
-    font-size: 1em;
-    width: 100%;
-    padding: 0.5%;
-}
-
-footer input[type=submit] {
-    margin-top: 1%;
-    font-size: 1em;
-    background-color: black;
-    color: white;
-    padding: 0.5%;
-    border: 0;
-    cursor: pointer;
-    transition: 0.6s;
-}
-
-footer input[type=submit]:hover {
-    background-color: rgb(50, 50, 50);
+#skills .row {
+    max-width: 90%;
 }
 
 @media only screen and (max-width: 425px) {
-    header {
-        width: 90%;
+    #intro h1 {
+        width: 75% !important;
+        font-size: 2.75em;
     }
 
-    header img {
-        width: 80%;
+    .nav-item {
+        width: 100%;
     }
 
-    #header-text h1 {
-        font-size: 1.25em;
+    #intro h2 {
+        font-size: 1.5em;
     }
 
-    section {
-        height: 116.5vh;
-        grid-template-columns: 43vw 43vw;
-        grid-template-rows: 22.5vh;
-        grid-gap: 1vh;
+    h2 {
+        font-size: 2.5em;
     }
 
-    section a i {
-        font-size: 2em;
-    }
-    
-    section a p {
-        font-size: 1em;
+    #about h2, #projects h2, #skills h2, #contact h2 {
+        padding-bottom: 0.5rem !important;
     }
 
-    footer {
-        width: 90%;
+    #about, #contact h2 {
+        width: 75% !important;
     }
 
-    footer p {
-        font-size: 1em;
+    #projects .row {
+        display: block;
+        max-width: 90%;
     }
 
-    footer input[type=submit] {
-        padding: initial;
+    #projects .row .col {
+        margin-bottom: 1rem;
+    }
+
+    #skills .row {
+        display: block;
+        max-width: 90%;
+    }
+
+    #skills .row .col {
+        margin-bottom: 1rem;
     }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-  section {
-      height: 145vh;
-      grid-template-columns: 30vw 30vw;
-      grid-template-rows: 28vh;
-      grid-gap: 1vh;
-  }
+    #projects .row {
+        display: block;
+        max-width: 50%;
+    }
 
-  section a i {
-    font-size: 5vw;
-}
+    #projects .row .col {
+        margin-bottom: 1rem;
+    }
 
-section a p {
-    font-size: 2vw;
-}
-  
-   footer input[type=submit] {
-        padding: initial;
+    #skills .row {
+        display: block;
+        max-width: 50%;
+    }
+
+    #skills .row .col {
+        margin-bottom: 1rem;
+    }
+
+    #contact p {
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  header {
-    width: 80%;
-  }
-  
-  section {
-    grid-template-columns: 25vw 25vw 25vw;
-  }
-  
-  section a p {
-     font-size: 1.5vw;
-  }
-  
-  footer {
-    width: 80%;
-  }
+    #skills .row {
+        max-width: 100%;
+    }
 }
