@@ -1,0 +1,57 @@
+.nav-link {
+    color: white !important;
+    transition: 0.4s;
+}
+
+#first-slide {
+    background-image: url('carousel-img.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+#second-slide {
+    background-image: url('carousel-img2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+#third-slide {
+    background-image: url('carousel-img3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+section {
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#contact form button {
+    color: white;
+}
+
+@media only screen and (max-width: 425px) {
+    .form-inline {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .form-inline input[type=search] {
+        width: 80%;
+    }
+
+    .media {
+        display: block;
+    }
+
+    .media img {
+        display: none;
+    }
+
+    .media-body {
+        margin: 0 auto !important;
+    }
+}

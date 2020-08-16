@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="carouselpage.css" />
+    <script src="https://kit.fontawesome.com/cd280adb12.js" crossorigin="anonymous"></script>
+    <title>Carousel Page</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-warning">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">
+        <span class="navbar-brand mb-0 h1">The Carousel</span>
+        <a class="nav-link" href="#attractions">Attractions</a>
+        <a class="nav-link" href="#testimonies">Testimonies</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="submit" class="btn btn-outline-light"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+  </nav>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div id="first-slide" class="carousel-item active">
+          <div class="carousel-caption d-md-block">
+            <h2>Welcome to the Carousel</h2>
+            <p>We're so happy to have you here!</p>
+          </div>
+        </div>
+        <div id="second-slide" class="carousel-item">
+          <div class="carousel-caption d-md-block">
+            <h2>Interactive Headlines</h2>
+            <p>All thanks to Bootstrap's use of Javascript.</p>
+          </div>
+        </div>
+        <div id="third-slide" class="carousel-item">
+          <div class="carousel-caption d-md-block">
+            <h2>Responsive & Mobile-friendly</h2>
+            <p>This webpage will detail some of the amazing things Bootstrap can do.</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </div>
+  <section id="attractions" class="container mt-5">
+    <div class="media my-5">
+      <div class="media-body align-self-center mr-5">
+        <h2 class="text-dark">Carousel Slideshow</h2>
+        <p class="text-secondary">What's a carnival without a carousel? Picture your website with a slideshow of some of your favourite images moving by themselves or with a click of a button.</p>
+      </div>
+      <img src="carousel-img4.jpg">
+    </div>
+    <div class="media my-5">
+      <img src="carousel-img5.jpg">
+      <div class="media-body align-self-center ml-5">
+        <h2 class="text-dark">Responsive</h2>
+        <p class="text-secondary">No matter how big or small your screen is, Bootstrap is equipped to respond to different screen dimensions and make content fit appropriately.</p>
+      </div>
+    </div>
+    <div class="media my-5">
+      <div class="media-body align-self-center mr-5">
+        <h2 class="text-dark">Colour Palette</h2>
+        <p class="text-secondary">Bootstrap have a number of colour codes that have been tailored for the framework that are pleasing to the eye and would compliment any website design.</p>
+      </div>
+      <img src="carousel-img6.jpg">
+    </div>
+    <div id="testimonies"class="card-columns my-5">
+      <div class="card">
+        <div class="card-body text-center">
+          <img class="rounded-circle" src="carousel-img7.jpg">
+          <h4 class="my-3">John Doe</h4>
+          <p>Bootstrap is the greatest web framework of all time!</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <img class="rounded-circle" src="carousel-img8.jpg">
+          <h4 class="my-3">Jane Smith</h4>
+          <p>Bootstrap makes developing websites so much easier.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <img class="rounded-circle" src="carousel-img9.jpg">
+          <h4 class="my-3">Jessica Adams</h4>
+          <p>I highly recommend learning Bootstrap if you're a web developer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="container my-5">
+    <h2 class="text-dark">Contact</h2>
+    <p class="text-secondary">If you're interested in learning more about Bootstrap, let us know!</p>
+    <form>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" placeholder="john@example.com" id="email">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <input type="text" class="form-control" placeholder="Message" id="message">
+        </div>
+        <button type="submit" class="btn btn-warning">Send</button>
+    </form>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
