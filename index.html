@@ -1,71 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-	<meta name="description" content="JVS Development" />
-	<title>JVS Development</title>
-    	<link rel="stylesheet" href="index.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/cd280adb12.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="JVS Development, developer portfolio of Jamie Scott showcasing who I am and the projects I've worked on.">
+    <title>JVS Development</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/cd280adb12.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div id="header-img">
-            <img src="profilepic.png">
-        </div>
-        <div id="header-text">
-            <h1>JVS Development</h1>
-            <p>Web Developer</p>
-            <p><i class="fas fa-map-marker-alt"></i>Melbourne</p>
-        </div>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarDropdown">
+                <span class="navbar-brand mb-0 h1">JVS DEVELOPMENT</span>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <section>
-        <a href="templates/basicblog.html" style="background-color: rgb(192, 57, 43);">
-            <i class="fas fa-book"></i>
-            <p>Basic Blog</p>
-        </a>
-        <a href="templates/devportfolio.html" style="background-color: rgb(52, 73, 94);">
-            <i class="fas fa-paint-brush"></i>
-            <p>Developer Portfolio</p>
-        </a>
-        <a href="templates/surveyform.html" style="background-color: rgb(142, 68, 173);;">
-            <i class="fas fa-clipboard-list"></i>
-            <p>Survey Form</p>
-        </a>
-        <a href="templates/productpage.html" style="background-color: rgb(127, 140, 141);">
-            <i class="fas fa-box-open"></i>
-            <p>Product Page</p>
-        </a>
-        <a href="templates/docpage.html" style="background-color: rgb(230, 126, 34);">
-            <i class="fas fa-file-alt"></i>
-            <p>Documentation Page</p>
-        </a>
-        <a href="templates/restaurant.html" style="background-color: rgb(46, 204, 113);">
-            <i class="fas fa-utensils"></i>
-            <p>Restaurant Page</p>
-        </a>
-        <a href="templates/devportfolio2.html" style="background-color: rgb(211, 84, 0);">
-            <i class="fas fa-paint-brush"></i>
-            <p>Developer Portfolio #2</p>
-        </a>
-        <a href="templates/photoportfolio.html" style="background-color: rgb(41, 128, 185);">
-            <i class="fas fa-camera"></i>
-            <p>Photography Portfolio</p>
-        </a>
-        <a href="templates/gridblog.html" style="background-color: rgb(26, 188, 156);">
-            <i class="fas fa-th-large"></i>
-            <p>Grid Blog</p>
-        </a>
+    <section id="intro" class="text-center py-5">
+        <img class="p-1" src="profilepic.png">
+        <h1 class="display-3 pb-3 w-50 mx-auto">JVS Development</h1>
+        <h2 class="font-weight-normal pt-3">Web Developer • Melbourne</h2>
     </section>
-    <footer>
-        <p>Like what you see? Let's work together!</p>
-        <form action="mailto:jamie@jvsdevelopment.com" method="POST" enctype="text/plain">
-            <input type="text" id="fullname" name="fullname" placeholder="Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="text" id="message" name="message" placeholder="Brief message" required>
-            <input type="submit" value="Compose">
+    <section id="about" class="text-center py-4 w-50 mx-auto">
+        <h2 class="pb-3">About Me</h2>
+        <p>My name is Jamie, and I'm a predominantly self-taught web developer. I began learning how to write HTML & CSS online, and then participated in courses through high school and tertiary education to improve my skills. Through my studies I've been able to not only learn code but also great techniques to use and making sure the final product is properly tested to ensure a smooth launch.</p>
+        <p>I'm passionate about web development and try to keep up to date with new practices through W3C and browsing online communities. I want to build websites and other web based programs from scratch that can help individuals and businesses gain exposure and provide interactivity with their customers.</p>
+        <p>Through my previous job history, I consider myself an interpretive person and will listen to customers wants and needs to be able to provide a solution that suits them. Feel free to browse my portfolio to see what I've recently worked on and get in contact with me if you're interested in working together.</p>
+    </section>
+    <section id="projects" class="text-center text-white bg-dark py-4">
+        <h2 class="pb-3 w-75 mx-auto">Projects</h2>
+        <div class="row mx-auto my-3 container">
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Photo Album</h3>
+                        <p>Simple photo album utilising Bootstrap cards. Inspired by Bootstrap's Photo Album example.</p>
+                        <p>Built with: Bootstrap</p>
+                        <a href="templates/photoalbum.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Product Landing Page #2</h3>
+                        <p>A product landing page inspired by Apple's website.</p>
+                        <p>Built with: Bootstrap</p>
+                        <a href="templates/productpage2.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Bootstrap Form</h3>
+                        <p>A form built entirely using Bootstrap elements.</p>
+                        <p>Built with: Bootstrap</p>
+                        <a href="templates/bootstrapform.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto my-3 container">
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Carousel Page</h3>
+                        <p>A Bootstrap web page featuring the carousel effect.</p>
+                        <p>Built with: Bootstrap</p>
+                        <a href="templates/carouselpage.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">News Page</h3>
+                        <p>A news page taking inspiration from News.com.au.</p>
+                        <p>Built with: Bootstrap</p>
+                        <a href="templates/newspage.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Developer Portfolio</h3>
+                        <p>This is a modern developer portfolio design.</p>
+                        <p>Built with: HTML & CSS</p>
+                        <a href="templates/devportfolio.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto my-3 container">
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Survey Page</h3>
+                        <p>A simple survey form utilising HTML form elements.</p>
+                        <p>Built with: HTML & CSS</p>
+                        <a href="templates/surveypage.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Product Page</h3>
+                        <p>This product page is built using flexbox display techniques and borrowing assets from GTA V.</p>
+                        <p>Built with: HTML & CSS</p>
+                        <a href="templates/productpage.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Restaurant Page</h3>
+                        <p>A simple modern designed webpage for a restaurant.</p>
+                        <p>Built with: HTML & CSS</p>
+                        <a href="templates/restaurantpage.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto my-3 container">
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Developer Portfolio #2</h3>
+                        <p>A simple modern designed webpage for a developer.</p>
+                        <p>Built with: HTML & CSS</p>
+                        <a href="templates/devportfolio2.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Photography Portfolio</h3>
+                        <p>A photography portfolio featuring parallax background images.</p>
+                        <p>Built with: HTML & CSS</p>
+                        <a href="templates/photoportfolio.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bg-secondary">
+                    <div class="card-body d-flex flex-column justify-content-around">
+                        <h3 class="font-weight-bold">Grid Blog</h3>
+                        <p>A minimally designed blog utilising CSS Grid techniques.</p>
+                        <p>Built with: HTML & CSS</p>
+                        <a href="templates/gridblog.html"><button type="button" class="btn btn-light btn-lg btn-block">View Page</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="text-center py-4">
+        <h2 class="pb-2 w-75 mx-auto">Skills</h2>
+        <div class="row pt-2 mx-auto">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i style="color: rgb(228, 77, 38);" class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <h5>Years of Experience</h5>
+                        <p>4</p>
+                        <h5>Topics Covered</h5>
+                        <p>HTML5, Tables, Forms and Semantic Elements</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i style="color: rgb(38, 77, 228);" class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <h5>Years of Experience</h5>
+                        <p>4</p>
+                        <h5>Topics Covered</h5>
+                        <p>CSS3, Flexbox, Grid and Responsiveness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i style="color: rgb(86, 61, 124);" class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                        <h5>Years of Experience</h5>
+                        <p>1</p>
+                        <h5>Topics Covered</h5>
+                        <p>Bootstrap 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i style="color: rgb(240, 219, 79);" class="fab fa-js-square"></i>
+                        <h3>Javascript</h3>
+                        <h5>Years of Experience</h5>
+                        <p>2</p>
+                        <h5>Topics Covered</h5>
+                        <p>ES6 and DOM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="text-center py-4">
+        <h2 class="pb-2 w-50 mx-auto">Contact</h2>
+        <p>If you like what you see or want to send some words of encouragement, feel free to fill out the form below to send an email.</p>
+        <form class="container text-left" action="mailto:jamie@jvsdevelopment.com" method="POST" enctype="text/plain">
+            <input type="text" class="form-control mb-3" id="fullname" name="fullname" placeholder="Name" required>
+            <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Email" required>
+            <input type="text" class="form-control mb-3" id="message" name="message" placeholder="Brief message" required>
+            <input type="submit" class="btn btn-secondary" value="Compose">
         </form>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
