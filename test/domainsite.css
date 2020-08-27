@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(14, 15, 26);
+}
+
+h1 {
+    font-size: 5em;
+}
+
+form {
+    width: 75%;
+}
+
+input[type=search] {
+    font-size: 1.5em;
+}
+
+input[type=search], [type=search]:focus {
+    background-color: rgb(22, 22, 39);
+    border: 0;
+    color: lightgrey;
+}
+
+footer {
+    margin-top: 10em;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: rgb(159, 224, 177);
+    color: rgb(14, 15, 26);
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    background-color: rgb(68, 207, 108);
+}
+
+.card {
+    background-color: rgb(22, 22, 39);
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-color: rgb(36, 36, 134);
+    cursor: pointer;
+}
+
+.badge {
+    background-color: rgb(159, 224, 177);
+    color: rgb(14, 15, 26);
+    font-size: 0.5em;
+}
+
+#signin-btn {
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 425px) {
+    form {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn, input[type=search] {
+        font-size: 1em;
+        display: inline;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .col {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .btn, input[type=search] {
+        font-size: 1em;
+    }
+}
