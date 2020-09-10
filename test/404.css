@@ -1,0 +1,74 @@
+body {
+    margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
+}
+
+#left-title {
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-left: 1.5em;
+    text-transform: uppercase;
+}
+
+#wrapper {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2em;
+}
+
+#wrapper-text {
+    width: 25%;
+}
+
+#wrapper-text h1 {
+    text-transform: uppercase;
+}
+
+#wrapper-text a {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+#wrapper-text a:hover {
+    background-color: rgb(80, 80, 80)
+}
+
+#brand {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+    #wrapper {
+        display: block;
+    }
+
+    #wrapper img {
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #wrapper-text {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #wrapper img {
+        max-width: 100%;
+    }
+}
