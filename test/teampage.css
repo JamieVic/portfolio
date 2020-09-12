@@ -48,7 +48,7 @@ footer {
     padding-top: 5em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     header {
         display: block;
         margin-left: 1em;
