@@ -60,6 +60,11 @@ footer {
 
     main {
         grid-template-columns: repeat(2, auto);
+        min-width: 0;
+    }
+
+    figure img {
+        max-width: 100%;
     }
 
     #item4, #item6 {
