@@ -1,0 +1,174 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(24, 23, 25);
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    border: 1px solid white;
+    padding: 0.25em;
+    font-size: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1em;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 90%;
+    margin: auto;
+    padding-top: 5em;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 700;
+    color: grey;
+}
+
+#menuicon {
+    display: none;
+}
+
+#menuicon div {
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+#closebutton {
+    display: none;
+    color: white;
+    font-size: 4em;
+    text-align: right;
+    margin: 0 0.25em 0 0;
+}
+
+#left-panel {
+    width: 50%;
+}
+
+#left-panel h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+#left-panel p {
+    line-height: 1.5;
+    width: 75%;
+}
+
+#left-panel a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#right-panel img {
+    max-width: 100%;
+}
+
+#designer-box {
+    background-color: rgb(24, 23, 25);
+    width: 50%;
+    margin: 0 35%;
+    padding: 2em;
+    position: relative;
+    bottom: 10%;
+}
+
+#designer-box-header {
+    display: flex;
+    align-items: center;
+}
+
+#designer-box-header img {
+    border-radius: 50%;
+}
+
+#db-header-text {
+    padding-left: 2em;
+}
+
+#db-header-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+#db-header-text p {
+    color: grey;
+}
+
+@media only screen and (max-width: 425px) {
+    nav {
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: rgb(24, 23, 25);
+    }
+
+    nav a {
+        text-align: center;
+        display: block;
+        margin: 5em 0;
+    }
+
+    main {
+        display: block;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        margin-top: 5em;
+        border-top: 1px solid grey;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menuicon {
+        display: initial;
+    }
+
+    #left-panel {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    #designer-box {
+        max-width: 100%;
+        width: 75%;
+        margin: -10% 5%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #designer-box {
+        max-width: 100%;
+        width: 75%;
+        margin-left: 5%;
+    }
+}
