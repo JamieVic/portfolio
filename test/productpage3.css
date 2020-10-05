@@ -165,13 +165,12 @@ footer p {
     li {
         display: block;
         text-align: center;
-        margin: 1rem 0 !important;
     }
 
     li a {
         display: block;
         width: 100%;
-        padding: 8vh 0;
+        padding: 9vh 0;
     }
 
     main {
